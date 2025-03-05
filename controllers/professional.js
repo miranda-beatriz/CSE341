@@ -1,3 +1,5 @@
+const express = require('express');
+const router = express.Router();
 const mongodb = require('../db/connect');
 
 const getData = async (req, res, next) => {
@@ -9,3 +11,4 @@ const getData = async (req, res, next) => {
 };
 
 module.exports = { getData };
+module.exports = router;
